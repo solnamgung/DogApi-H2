@@ -15,6 +15,9 @@ public class Dog {
     private String breed;
     private String origin;
 
+    public Dog() {
+    }
+
     public Dog(Long id, String name, String breed, String origin) {
         this.id = id;
         this.name = name;
