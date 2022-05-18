@@ -28,6 +28,12 @@ public class DogServiceImpl implements DogService{
 
     @Override
     public String retrieveDogBreedById(Long id) {
+        /**
+         *
+         The ofNullable() method is used to get an instance of the Optional class with a specified value.
+         If the value is null , then an empty Optional object is returned.
+         * For the orElseThrow method, a supplier function that returns an Exception object is passed as an argument.
+         *  */
         Optional<String> optionalBreed = Optional.ofNullable(dogRepository.findBreedById(id));
         String breed = optionalBreed.orElseThrow(DogNotFoundException::new);
         return breed;
