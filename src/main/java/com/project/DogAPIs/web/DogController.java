@@ -14,14 +14,15 @@ import java.util.List;
 
 @RestController
 public class DogController {
+
     private DogService dogService;
 
     @Autowired
     public void setDogService(DogService dogService) {
         this.dogService = dogService;
     }
+
     /**
-     *
      ResponseEntity represents the whole HTTP response:
      status code, headers, and body. As a result, we can use it to fully configure the HTTP response.
      If we want to use it, we have to return it from the endpoint; Spring takes care of the rest. ResponseEntity is a generic type

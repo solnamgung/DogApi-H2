@@ -1,7 +1,6 @@
 package com.project.DogAPIs.service;
 
 import com.project.DogAPIs.entity.Dog;
-
 import java.util.List;
 
 public interface DogService {
